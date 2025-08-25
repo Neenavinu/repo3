@@ -10,6 +10,9 @@ public class facebook {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com");
+		
+		//Edited Line
+		  driver.findElement(By.name("email")).sendKeys("unknownemail@gmail.com");
 	}
 
 }
